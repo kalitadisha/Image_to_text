@@ -14,11 +14,11 @@ This application is a simple OCR (Optical Character Recognition) tool built with
 3.The worker loads the English language data and recognizes text from the uploaded image.
 4.During processing, a progress indicator shows the OCR status, updating as Tesseract reads and analyzes the image.
 
-*Displaying Recognized Text:
+* Displaying Recognized Text:
 1.After Tesseract completes the OCR process, it returns the recognized text, which is displayed in a read-only text area within the application.
 2.The text area allows users to review and confirm the accuracy of the extracted text.
 
-Generating a PDF:
+* Generating a PDF:
 1.Once the text is displayed, the "Download PDF" button is enabled.
 2.When clicked, this button uses the jsPDF library to generate a PDF file containing the recognized text.
 3.The splitTextToSize function ensures that long lines of text wrap correctly within the PDF.
