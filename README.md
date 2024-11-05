@@ -3,21 +3,21 @@ This application is a simple OCR (Optical Character Recognition) tool built with
 
 # Techstack
 # Working
-## 1.Image Upload:
+ 1.Image Upload:
 - The user uploads an image containing text by clicking the file input.
 - The uploaded image is displayed in the application, allowing the user to confirm the image is correct.
 
-## 2.Starting OCR:
+ 2.Starting OCR:
 - When the user clicks "Start OCR," the application initializes Tesseract.js, an OCR library that processes the image.
 - The Tesseract.createWorker() function creates a worker (background process) for handling OCR without blocking the main application.
 - The worker loads the English language data and recognizes text from the uploaded image.
 - During processing, a progress indicator shows the OCR status, updating as Tesseract reads and analyzes the image.
 
-## 3.Displaying Recognized Text:
+ 3.Displaying Recognized Text:
 - After Tesseract completes the OCR process, it returns the recognized text, which is displayed in a read-only text area within the application.
 - The text area allows users to review and confirm the accuracy of the extracted text.
 
-## 4.Generating a PDF:
+ 4.Generating a PDF:
 - Once the text is displayed, the "Download PDF" button is enabled.
 - When clicked, this button uses the jsPDF library to generate a PDF file containing the recognized text.
 - The splitTextToSize function ensures that long lines of text wrap correctly within the PDF.
