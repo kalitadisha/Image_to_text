@@ -3,9 +3,8 @@ This application is a simple OCR (Optical Character Recognition) tool built with
 
 ## Techstack
 - HTML/CSS/JavaScript: Basic web application structure.
-- pdf.js: PDF parsing and text extraction.
-
-- jsPDF: Exporting chart as PDF files.
+- Tesseract.js:To extract text from images.
+- jsPDF: Exporting generated text as PDF files.
 ## Working
  1.Image Upload:
 - The user uploads an image containing text by clicking the file input.
