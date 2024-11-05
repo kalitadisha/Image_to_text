@@ -3,22 +3,22 @@ This application is a simple OCR (Optical Character Recognition) tool built with
 
 ## Techstack
 ## Working
-Image Upload:
-- 1.The user uploads an image containing text by clicking the file input.
-- 2.The uploaded image is displayed in the application, allowing the user to confirm the image is correct.
+## 1.Image Upload:
+- The user uploads an image containing text by clicking the file input.
+- The uploaded image is displayed in the application, allowing the user to confirm the image is correct.
 
-* Starting OCR:
-- 1.When the user clicks "Start OCR," the application initializes Tesseract.js, an OCR library that processes the image.
-- 2.The Tesseract.createWorker() function creates a worker (background process) for handling OCR without blocking the main application.
-- 3.The worker loads the English language data and recognizes text from the uploaded image.
-- 4.During processing, a progress indicator shows the OCR status, updating as Tesseract reads and analyzes the image.
+## 2.Starting OCR:
+- When the user clicks "Start OCR," the application initializes Tesseract.js, an OCR library that processes the image.
+- The Tesseract.createWorker() function creates a worker (background process) for handling OCR without blocking the main application.
+- The worker loads the English language data and recognizes text from the uploaded image.
+- During processing, a progress indicator shows the OCR status, updating as Tesseract reads and analyzes the image.
 
-* Displaying Recognized Text:
-- 1.After Tesseract completes the OCR process, it returns the recognized text, which is displayed in a read-only text area within the application.
-- 2.The text area allows users to review and confirm the accuracy of the extracted text.
+## 3.Displaying Recognized Text:
+- After Tesseract completes the OCR process, it returns the recognized text, which is displayed in a read-only text area within the application.
+- The text area allows users to review and confirm the accuracy of the extracted text.
 
-* Generating a PDF:
-- 1.Once the text is displayed, the "Download PDF" button is enabled.
-- 2.When clicked, this button uses the jsPDF library to generate a PDF file containing the recognized text.
-- 3.The splitTextToSize function ensures that long lines of text wrap correctly within the PDF.
-- 4.Finally, the PDF is downloaded to the user’s device as "OCR_Result.pdf."
+## 4.Generating a PDF:
+- Once the text is displayed, the "Download PDF" button is enabled.
+- When clicked, this button uses the jsPDF library to generate a PDF file containing the recognized text.
+- The splitTextToSize function ensures that long lines of text wrap correctly within the PDF.
+- Finally, the PDF is downloaded to the user’s device as "OCR_Result.pdf."
