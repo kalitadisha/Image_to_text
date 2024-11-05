@@ -1,8 +1,8 @@
 # Image to Text Converter
 This application is a simple OCR (Optical Character Recognition) tool built with HTML, CSS, JavaScript, Tesseract.js, and jsPDF. It allows users to upload an image with text, recognize the text in the image using OCR, and download the recognized text as a PDF.
 
-# Techstack
-# Working
+## Techstack
+## Working
  1.Image Upload:
 - The user uploads an image containing text by clicking the file input.
 - The uploaded image is displayed in the application, allowing the user to confirm the image is correct.
